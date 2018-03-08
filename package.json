@@ -1,16 +1,11 @@
 {
-  "name": "web-twig-starter-kit",
+  "name": "AllanSite",
   "version": "2.1.1",
-  "description": "Front-end starter kit based on the Google's web-starter-kit with twig integration",
+  "description": "",
   "keywords": [
-    "frontend",
-    "reusable",
-    "workflow",
-    "gulp",
-    "twig",
-    "starter-kit"
+
   ],
-  "author": "hello@pierrecabriere.fr",
+  "author": "hello@davidvelten.fr",
   "license": "APACHE",
   "devDependencies": {
     "apache-server-configs": "^2.14.0",
