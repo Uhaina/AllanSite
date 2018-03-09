@@ -11,8 +11,11 @@ header {
   align-items: flex-start;
   justify-content: center;
   position: relative;
+  z-index: -1;
 
-  div.overlay {
+  &::before {
+    content: "";
+    display: block;
     position: absolute;
     background: linear-gradient(to right top, #8e44ad, #2980b9);
     top: 0;
@@ -40,5 +43,6 @@ header {
     font-size: 1.3em;
     padding: 0px 50px;
     color: #fff;
+    font-weight: 600;
   }
 }
