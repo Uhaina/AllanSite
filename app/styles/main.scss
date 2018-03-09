@@ -7,6 +7,7 @@
 @import "./navbar";
 @import "./footer";
 
+
 body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
@@ -68,4 +69,63 @@ section.presentation-container {
 
 section.portfolio-container {
 
+}
+
+section.contact-container{
+
+  .contact-form {
+    width: 100%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-main-picture{
+    max-width: 50%;
+    max-height: 400px;
+  }
+
+  div.input-container {
+    width: 100%;
+    margin-bottom: 10px;
+
+    label {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      outline: none;
+      padding: 10px;
+      border-radius: 3px;
+
+      &:focus {
+        border-color: #8e44ad;
+      }
+    }
+
+    textarea {
+      height: 130px;
+    }
+  }
+  button {
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #ddd;
+    cursor: pointer;
+  }
 }
