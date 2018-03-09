@@ -2,10 +2,56 @@
 
 {% block body %}
 
+  {% include "html/includes/navbar.html" %}
   {% include "html/includes/header.html" %}
 
-  <strong>Body</strong>
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor eveniet explicabo fugit ipsum libero molestias quam quia voluptate. Exercitationem officiis porro quibusdam recusandae tenetur! Dignissimos porro quaerat saepe similique!
+  </div>
 
   {% include "html/includes/footer.html" %}
 
 {% endblock %}
+
+{% block javascripts %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.0/rellax.min.js"></script>
+
+  <script type="text/javascript">
+      var options = {
+          strings: ["Allan LAVAURE", "Webmarketing", "Communication"],
+          typeSpeed: 60,
+          backSpeed: 20,
+          shuffle: true,
+          loop: true,
+      }
+
+      var optionRellax = {
+          speed: -2,
+      }
+
+      new Typed("header h1.main-title span", options);
+      new Rellax('header div.title-container', optionRellax);
+  </script>
+
+
+{% endblock %}
+

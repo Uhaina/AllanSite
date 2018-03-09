@@ -1,6 +1,12 @@
+// dependances
 @import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:700,800');
 
-body
-{
-  background-color: white;
+// imports
+@import "./header";
+@import "./navbar";
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
 }

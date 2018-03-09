@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  height: 100vh;
+  min-height: 450px;
+  background-image: url("../images/background-header.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  div.overlay {
+    position: absolute;
+    background: linear-gradient(to right top, #8e44ad, #2980b9);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: .6;
+  }
+
+  h1.main-title {
+    position: relative;
+    font-size: 4em;
+    font-weight: 800;
+    padding: 0px 50px;
+    margin: 0;
+    color: #fff;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 4px rgba(#656565, .8);
+  }
+
+  p.subtitle {
+    position: relative;
+    font-size: 1.3em;
+    padding: 0px 50px;
+    color: #fff;
+  }
+}
