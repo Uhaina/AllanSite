@@ -2,9 +2,7 @@
   "name": "AllanSite",
   "version": "2.1.1",
   "description": "",
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "hello@davidvelten.fr",
   "license": "MIT",
   "devDependencies": {
