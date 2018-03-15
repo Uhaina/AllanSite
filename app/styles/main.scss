@@ -1,15 +1,17 @@
 // dependances
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Poppins:700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
 // imports
 @import "./header";
 @import "./navbar";
 @import "./footer";
 
-
+// CSS PAGE --------------------------------------
 body {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -25,6 +27,8 @@ section.container {
     background-color: #f5F5F5;
   }
 }
+
+// PRESENTATION.HTML --------------------------------------
 
 section.presentation-container {
   .presentation {
@@ -67,12 +71,72 @@ section.presentation-container {
   }
 }
 
-section.services-container {
+// MES SERVICES --------------------------------------
 
+section.services-container {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 50px;
+    }
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 150px;
+    box-sizing: border-box;
+
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0px 25px;
+
+      .service-item-description {
+        text-align: center;
+        margin: 0px;
+      }
+
+      .service-item-title {
+        font-weight: 600;
+        margin: 10px 0px 15px 0px;
+      }
+
+      img.service-picture {
+        height: 100px;
+      }
+    }
+  }
 }
+
+// FORMULAIRE DE CONTACT --------------------------------------
 
 section.contact-container{
 
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+
+  .contact-form-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
   .contact-form {
     width: 100%;
     padding-right: 50px;
@@ -80,12 +144,6 @@ section.contact-container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .contact{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 
   .contact-main-picture{
@@ -128,4 +186,16 @@ section.contact-container{
     background: #ddd;
     cursor: pointer;
   }
+
+  .ifSendMail{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: none;
+  }
+
+  .ifSendMail.open {
+    display: block;
+  }
+
+
 }
