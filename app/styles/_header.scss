@@ -13,6 +13,7 @@ header {
   position: relative;
   z-index: -1;
 
+
   &::before {
     content: "";
     display: block;
@@ -36,6 +37,12 @@ header {
     z-index: 1;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0px 0px 4px rgba(#656565, .8);
+
+    @media screen and (max-width: 700px) {
+      font-size: 2.5em;
+      padding: 0px 20px;
+    }
+
   }
 
   p.subtitle {
@@ -44,5 +51,9 @@ header {
     padding: 0px 50px;
     color: #fff;
     font-weight: 600;
+    @media screen and (max-width: 700px) {
+      font-size: 1em;
+      padding: 0px 20px;
+    }
   }
 }

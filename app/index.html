@@ -8,7 +8,7 @@
 <div class="page-content">
   {% include "html/includes/pages/index/presentation.html" %}
 
-  {% include "html/includes/pages/index/portfolio.html" %}
+  {% include "html/includes/pages/index/services.html" %}
 
   {% include "html/includes/pages/index/contact.html" %}
 
@@ -23,6 +23,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script type="text/javascript">
+
+      // ANIMATION TYPED.JS
       var options = {
           strings: ["Allan LAVAURE", "Marketing", "Commercial"],
           typeSpeed: 60,
@@ -32,6 +34,7 @@
 
       new Typed("header h1.main-title span", options);
 
+      // PARALLAX - RELLAX.JS
       new Rellax('header div.title-container', {
           speed: -2,
       });
@@ -39,14 +42,14 @@
           speed: -1,
       });
 
+      // BACK TO TOP
       $("a.back-to-top").on('click', function(event) {
         event.preventDefault();
 
         $('html, body').animate({scrollTop: 0}, 'slow');
       });
 
-
-
+      // VIDER LES CHAMPS + ALERT APRES MAIL
         function validRequest() {
           $('#nom').val('');
           $('#email').val('');
@@ -54,6 +57,7 @@
           $("div.ifSendMail").addClass("open");
         }
 
+        // ENVOI DU MAIL
         $("form.contact-form").on('submit', function (event) {
 
           event.preventDefault();
