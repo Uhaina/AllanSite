@@ -39,14 +39,22 @@
           speed: -1,
       });
 
-      function validRequest() {
+      $("a.back-to-top").on('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({scrollTop: 0}, 'slow');
+      });
+
+
+
+        function validRequest() {
           $('#nom').val('');
           $('#email').val('');
           $('#message').val('');
-          $( "div.ifSendMail" ).addClass( "open" );
-      }
+          $("div.ifSendMail").addClass("open");
+        }
 
-      $("form.contact-form").on('submit', function(event) {
+        $("form.contact-form").on('submit', function (event) {
 
           event.preventDefault();
 
@@ -55,14 +63,15 @@
           var message = $('#message').val();
 
           $.ajax({
-              url : "http://preprod.davidvelten.fr/AllanSite-sendmail/index.php",
-              type : "POST",
-              data : "nom="+name+"&email="+email+"&message="+message,
-              complete : function(resultat, statut, erreur){
-                  validRequest();
-              }
+            url: "http://preprod.davidvelten.fr/AllanSite-sendmail/index.php",
+            type: "POST",
+            data: "nom=" + name + "&email=" + email + "&message=" + message,
+            complete: function (resultat, statut, erreur) {
+              validRequest();
+            }
           });
-      });
+        });
+
 
   </script>
 
